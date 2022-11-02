@@ -26,7 +26,7 @@ Route::get('/link', function (Request $request) {
     $platform = $agent->platform();
 
     dd($platform);
-    if ($platform == "Android") {
+    if ($platform == "AndroidOS") {
         return 'open in android';
     } elseif ($platform == "iphone") {
         return 'open in iphone';
