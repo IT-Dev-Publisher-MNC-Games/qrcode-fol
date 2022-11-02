@@ -16,6 +16,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    return 'not found';
+});
+
+Route::get('/fightoflegends', function () {
     $agent = new Agent();
     $platform = $agent->platform();
 
