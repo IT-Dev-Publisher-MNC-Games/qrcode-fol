@@ -25,9 +25,9 @@ Route::get('/fightoflegends', function () {
 
  
     if ($platform == "AndroidOS") {
-        return redirect('https://play.google.com/store/games');
-    } elseif ($platform == "iphone") {
-        return 'open in iphone';
+        return redirect('https://play.google.com/store/games?hl=id&gl=US');
+    } elseif ($platform == "OS X") {
+        return redirect('https://www.apple.com/id/app-store');
     } else {
         return redirect('https://fightoflegends.co.id');
     }
