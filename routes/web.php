@@ -16,12 +16,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
-
-
-Route::get('/link', function (Request $request) {
-
     $agent = new Agent();
     $platform = $agent->platform();
 
@@ -33,4 +27,4 @@ Route::get('/link', function (Request $request) {
     } else {
         return 'open in browser';
     }
-})->name('click');
+});
