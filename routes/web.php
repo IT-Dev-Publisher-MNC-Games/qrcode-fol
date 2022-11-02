@@ -25,6 +25,6 @@ Route::get('/', function () {
     } elseif ($platform == "iphone") {
         return 'open in iphone';
     } else {
-        return 'open in browser';
+        return redirect('https://fightoflegends.co.id');
     }
 });
