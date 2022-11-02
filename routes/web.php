@@ -21,7 +21,7 @@ Route::get('/', function () {
 
  
     if ($platform == "AndroidOS") {
-        return 'https://play.google.com/store/games';
+        return redirect('https://play.google.com/store/games');
     } elseif ($platform == "iphone") {
         return 'open in iphone';
     } else {
